@@ -1,3 +1,7 @@
+/*Nabila Alifia Rizky
+NIM A11.2022.14325
+Kelas 4208*/
+
 #include <iostream>
 
 using namespace std;
