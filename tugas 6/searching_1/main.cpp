@@ -1,3 +1,7 @@
+//Nabila Alifia Rizky
+//A11.2022.14325
+//4208
+
 #include <iostream>
 #include <vector>
 
