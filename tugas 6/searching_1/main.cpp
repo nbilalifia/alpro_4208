@@ -3,15 +3,11 @@
 //4208
 
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
-#include <iostream>
-#include <vector>
-
-int sequentialSearch(const vector<int>& arr, int target) {
-    for (int i = 0; i < arr.size(); i++) {
+int sequentialSearch(int arr[], int size, int target) {
+    for (int i = 0; i < size; i++) {
         if (arr[i] == target) {
             return i;
         }
@@ -20,10 +16,11 @@ int sequentialSearch(const vector<int>& arr, int target) {
 }
 
 int main() {
-    vector<int> data = {5, 2, 9, 1, 7};
+    int data[] = {5, 2, 9, 1, 7};
+    int size = sizeof(data) / sizeof(data[0]);
     int target = 9;
 
-    int index = sequentialSearch(data, target);
+    int index = sequentialSearch(data, size, target);
     if (index != -1) {
         cout << "Target ditemukan pada indeks: " << index << endl;
     } else {
